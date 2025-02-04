@@ -1,0 +1,77 @@
+/* General Styling */
+.App {
+  text-align: center;
+  font-family: 'Arial', sans-serif; /* Modern font */
+}
+
+.App-logo {
+  height: 20vmin; /* Reduced size for better layout */
+  pointer-events: none;
+  transition: transform 0.3s ease-in-out; /* Smooth transform on hover */
+}
+
+/* Media Query for Non-Reduced Motion Preference */
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 15s linear; /* Faster rotation for more dynamic feel */
+  }
+}
+
+.App-header {
+  background: linear-gradient(135deg, #ff6f61, #6a1b9a, #2196f3); /* Gradient background from pink to purple to blue */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(12px + 2vmin);
+  color: #fff; /* White text on colorful background */
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4); /* Subtle text shadow for depth */
+}
+
+/* Header Text Styling */
+.App-header h1 {
+  font-size: 3rem;
+  margin: 0;
+  color: #ffffff;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4); /* Light shadow for the main header */
+}
+
+.App-link {
+  color: #ffeb3b; /* Bright yellow for links */
+  font-weight: bold;
+  font-size: 1.5rem;
+  transition: color 0.3s ease, transform 0.3s ease;
+  margin-top: 20px;
+}
+
+.App-link:hover {
+  color: #ff5722; /* Hover effect with orange color */
+  text-decoration: underline;
+  transform: scale(1.1); /* Slight zoom effect */
+}
+
+/* Keyframe Animation for Logo Spin */
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Responsive Adjustments */
+@media screen and (max-width: 768px) {
+  .App-logo {
+    height: 30vmin; /* Resize the logo for smaller screens */
+  }
+
+  .App-header h1 {
+    font-size: 2rem; /* Smaller header text on smaller screens */
+  }
+
+  .App-link {
+    font-size: 1.2rem; /* Adjust link size on mobile */
+  }
+}

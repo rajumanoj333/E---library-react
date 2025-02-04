@@ -1,0 +1,124 @@
+/* General Body Styling */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #ff7e5f, #feb47b); /* Beautiful gradient background */
+  color: #fff; /* Light text color for contrast */
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* Header Styling */
+h1, h2, h3 {
+  font-family: 'Roboto', sans-serif;
+  color: #ffeb3b; /* Yellow for headers */
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+}
+
+/* Paragraphs and Text */
+p {
+  font-size: 1.1rem;
+  color: #f0f0f0; /* Soft white text */
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2); /* Light shadow for readability */
+}
+
+/* Link Styling */
+a {
+  color: #ffeb3b; /* Bright yellow for links */
+  text-decoration: none;
+  transition: all 0.3s ease; /* Smooth hover transition */
+}
+
+a:hover {
+  color: #ff5722; /* Hover effect with orange */
+  text-decoration: underline;
+  transform: scale(1.1); /* Slight zoom effect */
+}
+
+/* Buttons */
+button {
+  background: #ff5722; /* Vibrant orange button */
+  color: #fff;
+  border: none;
+  padding: 0.75rem 2rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background: #ff7043; /* Lighter shade of orange for hover effect */
+  transform: scale(1.05);
+}
+
+/* Code Block Styling */
+code {
+  font-family: 'Courier New', Courier, monospace;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  color: #80deea; /* Light cyan for code text */
+}
+
+/* Containers and Cards */
+.container {
+  background: rgba(0, 0, 0, 0.5); /* Slightly dark background for contrast */
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* Shadow for depth */
+  margin: 20px;
+  max-width: 800px;
+  width: 100%;
+}
+
+.card {
+  background: #ffeb3b; /* Bright yellow for card backgrounds */
+  color: #333; /* Darker text color for contrast */
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Subtle card shadow */
+  margin: 10px 0;
+}
+
+.card:hover {
+  background: #ff7043; /* Hover effect with orange */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* Stronger shadow on hover */
+}
+
+/* Animations */
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.fade-in {
+  animation: fadeIn 2s ease-in-out;
+}
+
+/* Footer Styling */
+footer {
+  background: #333;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+  font-size: 0.9rem;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+footer a {
+  color: #ff5722;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
